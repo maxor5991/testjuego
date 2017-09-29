@@ -7,10 +7,10 @@ function ente (x,y,w,h,dibujo,fotograma,volumen,resolucion,animacion,vida,vidama
 		if(puntos==10)
 			{
 				var ask = window.confirm(":v");
-    if (ask) {
+   // if (ask) {
 
-		document.location.href = "yes.html";
-	}
+	//	document.location.href = "yes.html";
+	//}
 
 			}
 		else
