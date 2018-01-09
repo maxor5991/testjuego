@@ -41,7 +41,7 @@ if (paralisis==0)
 {
 
 
-	if ( presiona[tecla_espacio] && contador_pulsa>0 )
+	if ( presiona[onclick] && contador_pulsa>0 )
 	{
 	mover ( 0, 0-velocidad_jugador); contador_pulsa=contador_pulsa-1;
 	}
@@ -49,7 +49,7 @@ if (paralisis==0)
 
 	if (guerrero.y<-100){guerrero.y=-100;}
 	
-	if (presiona[tecla_espacio]==0){contador_pulsa=8;}
+	if (presiona[onclick]==0){contador_pulsa=8;}
 
 
 	fondo.x=fondo.x-velocidad_fondo;
@@ -78,7 +78,7 @@ if (paralisis==0)
 else
 	
 {
-	if (presiona[tecla_espacio]==1 && contador_perdiste==0){paralisis=0; guerrero.y=100; tubo1.x=-100; tubo2.x=1500; tubo2.y=-300;  puntos_sub=0; puntos=0;}	
+	if (presiona[onclick]==1 && contador_perdiste==0){paralisis=0; guerrero.y=100; tubo1.x=-100; tubo2.x=1500; tubo2.y=-300;  puntos_sub=0; puntos=0;}	
 	if (contador_perdiste>0){contador_perdiste=contador_perdiste-1;}
 }
 
@@ -128,7 +128,7 @@ if (pantalla_juego==2)
 
 <!-- control -->
 
-if ( presiona[tecla_espacio] )
+if ( presiona[onclick] )
 {
 guerrero.x=200; guerrero.y=300; guerrero.vida=guerrero.vidamax; guerrero.velocidad=guerrero.velocidadmax; guerrero.accion=1; paralisis=0; guerrero.fotograma=1; guerrero.dibujo=1; 
 tocar1.src = sonido_musica1; tocar1.play(); 
