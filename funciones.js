@@ -7,10 +7,6 @@ function ente (x,y,w,h,dibujo,fotograma,volumen,resolucion,animacion,vida,vidama
 		if(puntos==10)
 			{
 				var ask = window.confirm("Holi no estes triste :) , todo saldra bien");
-				if (ask)
-				{
-					document.location.href = "yes.html";
-				}
 			}
 		else
 			{
